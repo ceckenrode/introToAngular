@@ -1,26 +1,5 @@
-$(document).ready(function() {
+var myApp = angular.module('myApp', []);
 
-  var currentStep = 0;
+myApp.controller('mainController', function(){
 
-  $('#step1').hide();
-  $('#step2').hide();
-
-  $('btnStep1').click(function(event) {
-
-  $('#step1').show();
-  $('#step2').hide();
-
-  currentStep = 1;
-
-  });
-
-  $('btnStep2').click(function(event) {
-    
-  $('#step1').hide();
-  $('#step2').show();
-
-  currentStep = 2;
-
-  });
-  
 });
