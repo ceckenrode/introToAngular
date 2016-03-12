@@ -13,5 +13,13 @@ console.log('old: ' + oldValue);
 console.log('new: ' + newValue);
 });
 
+setTimeout(function() {
+
+$scope.$apply(function() {
+    $scope.handle = 'newhandle';
+console.log('$scope changed');
+});
+
+}, 3000);
 
 }]);
