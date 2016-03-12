@@ -1,11 +1,11 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('mainController', function($scope, $log, $filter){
+myApp.controller('mainController',['$scope', '$timeout', function($scope, $timeout){
+  $scope.name = "Chris";
 
-  $scope.name = "john";
-  $scope.formattedName = $filter('uppercase')($scope.name);
+  $timeout(function(){
 
-  $log.info($scope.name);
-  $log.info($scope.formattedName);
+    $scope.name="Everybody";
 
-});
+  }, 3000);
+}]);

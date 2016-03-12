@@ -4,6 +4,10 @@
 <head>
   <title>Intro to Angular</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular-messages.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular-resource.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
@@ -26,16 +30,12 @@
       </div>
     </nav>
   </header>
-
   <div class="container">
     <div ng-controller="mainController">
-      <h1>Hello World</h1>
+      <h1>Hello {{ name + ', how are you?' }}</h1>
     </div>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
